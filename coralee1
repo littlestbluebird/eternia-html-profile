@@ -9,7 +9,7 @@
 
             body {
                 overflow: hidden;
-                background: color(#292929) no-repeat;
+                background: color(#292929);
                 background-size: 100vw 101vh;
             }
 
@@ -78,7 +78,7 @@
 
     <body>
         <div class="image-stack__item image-stack__item--bottom">
-            <img src="images/phosphene2.png" class="char-art-bottom">
+            <img src="images/Lugia.full.3697961.jpg" class="char-art-bottom">
         </div>
 
         <div class="image-stack__item--text">
