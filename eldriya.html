@@ -1,7 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+            margin: 0;
+            padding: 0;
+            }
 
+            body {
+                overflow: hidden;
+                background-color: #E4CFF2;
+                background-size: 100vw 101vh;
+            }
+
+            img {
+                max-width: 100%;
+                max-height: 100vh;
+                position: relative;
+            }
+
+            .image-stack__item--top {
+                float: left;
+                margin-right: -100%;
+                z-index: 1;
+            }
+
+            .image-stack__item--text {
+                float: bottom-left;
+                margin-right: 40%;
+            }
+
+            .image-stack__item--bottom {
+                float: left;
+                right: -0%;
+                z-index: -1;
+            }
+
+            .image-stack::after {
+                content: ' ';
+                display: table;
+                clear: both;
+            }
+
+            .char-art-top {
+                animation: slide 3s 0s;
+                animation-fill-mode: forwards;
+            }
+
+            .char-art-bottom {
+                opacity: 0;
+                animation: fade 3s 2s;
+                animation-fill-mode: forwards;
+            }
+
+            .char-text {
+                top: -86vh;
+                float: bottom-left;
+                animation: slide-down 2s 1s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes slide-down {
+                0% {top: -200vh;}
+                100% {top: -100vh;}
+            }
+
+            @keyframes slide {
+                0% {left: -20%;}
+                100% {left: 15%;}
+            }
+
+            @keyframes fade {
+                0% {opacity: 0;}
+                100% {opacity: 10;}
+            }
+        </style>
+    </head>
+<center>
+         <img src="images/tumblr_d86ee6568c550237ef547a31e749f2c7_904a2338_2048.webp" class="char-art-bottom">
+        </div></center>
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
